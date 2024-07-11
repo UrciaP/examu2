@@ -1,41 +1,40 @@
 @extends('layout')
 
-@section('titulo', 'Listado | ' .$servicio->nombre)
+@section('titulo', 'Listado | ' .$alumno->nombre)
 
 
 @section('content')
     <table class="table table-striped">
         <tr>
             <th>Alumno</th>
-            <th>{{$servicio->nombre}}</th>
-            <!-- <a href="{{route('servicios.edit',$servicio)}}">editar</a> -->
+            <th>{{$alumno->nombre}}</th>
         </tr>
         <tr>
             <td>Curso</td>
-            <td>{{$servicio->curso}}</td>
+            <td>{{$alumno->curso}}</td>
         </tr>
         <tr>
             <td >Nota 1</td>
-            <td>{{$servicio->nota1}}</td>
+            <td>{{$alumno->nota1}}</td>
         </tr>
         <tr>
             <td>Nota 2</td>
-            <td>{{$servicio->nota2}}</td>
+            <td>{{$alumno->nota2}}</td>
         </tr>
         <tr>
             <td>Promedio</td>
-            <td>{{$servicio->promedio}}</td>
+            <td>{{$alumno->promedio}}</td>
         </tr>
         <tr>
             <td>Condición</td>
-            <td>{{$servicio->condicion}}</td>
+            <td>{{$alumno->condicion}}</td>
         </tr>
         <tr>
             <td>Fecha de registro</td>
-            <td>{{$servicio->fechareg}}</td>
+            <td>{{$alumno->fechareg}}</td>
         </tr>
         <tr>
-            <td>{{$servicio->created_at->diffForHumans()}}</td>
+            <td>{{$alumno->created_at->diffForHumans()}}</td>
         </tr>
 
     </table>

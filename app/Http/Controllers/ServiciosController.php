@@ -21,7 +21,7 @@ class ServiciosController extends Controller
     public function show($id){
 
         return view('show',[
-            'servicio'=>Alumno::find($id)
+            'alumno'=>Alumno::find($id)
         ]);
     }
     public function create(){
